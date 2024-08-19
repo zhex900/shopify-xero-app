@@ -1,0 +1,9 @@
+node_modules
+build
+public/build
+dist/*
+*/*.yml
+.shopify
+sst.config.ts
+*/*/dist/*
+extensions/payment-customization/dist/function.js

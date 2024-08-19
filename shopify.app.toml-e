@@ -1,0 +1,26 @@
+# Learn more about configuring your app at https://d3gkjgf8vhw03w.cloudfront.net/docs/apps/tools/cli/configuration
+
+client_id = "3fc940c33ea02e3529b6ef922236e5c0"
+name = "xero-integration"
+handle = "xero-integration-3"
+application_url = "https://d3gkjgf8vhw03w.cloudfront.net"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "standbox.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://d3gkjgf8vhw03w.cloudfront.net/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_orders"
+
+[auth]
+redirect_urls = [
+  "https://d3gkjgf8vhw03w.cloudfront.net/auth/callback",
+  "https://d3gkjgf8vhw03w.cloudfront.net/auth/shopify/callback",
+  "https://d3gkjgf8vhw03w.cloudfront.net/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
