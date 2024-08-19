@@ -1,6 +1,6 @@
 # Shopify Xero App
 
-This is a Shopify admin app that allows merchants to manage their payment methods.
+This is a Shopify Xero app that allows merchants to manage their payment methods.
 
 ## About this project
 
