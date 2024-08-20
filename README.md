@@ -22,13 +22,62 @@ This is a Shopify Xero app that allows merchants to manage their payment methods
 
 ## Local Development
 
+### AWS profile
+
+Create a new AWS profile in `~/.aws/credentials` 
+
+### Cloudfare tunnel
+
+* Zero Trust
+* Networks
+* Create a tunnel
+
+### Shopify cli
+https://shopify.dev/docs/api/shopify-cli
+
+`npm install -g @shopify/cli@latest`
+
+To login into Shopify. Go to project root.
+
+`npm run config:use`
+
+### SST
+
+https://sst.dev/
+
+`npm i sst`
+
 `npm run dev`
 
 ## Deployment
 
 `sh script/deploy.sh`
 
-How to setup and install Event bridge
+## Shopify Partner
+
+https://partners.shopify.com
+
+## Create the Shopify app
+
+
+# Troubleshotting
+
+```
+# npm run dev
+weird json invalid character '<' looking for beginning of value <!DOCTYPE html>
+weird json invalid character '<' looking for beginning of value <html lang="en">
+weird json invalid character '<' looking for beginning of value <head>
+weird json invalid character '<' looking for beginning of value <meta charset="utf-8">
+weird json invalid character '<' looking for beginning of value <title>Error</title>
+weird json invalid character '<' looking for beginning of value </head>
+weird json invalid character '<' looking for beginning of value <body>
+weird json invalid character '<' looking for beginning of value <pre>Cannot GET /stream</pre>
+weird json invalid character '<' looking for beginning of value </body>
+weird json invalid character '<' looking for beginning of value </html>
+```
+This is because another SST session is running. Stop the other session and run `npm run dev` again.
+
+# How to setup and install Event bridge
 
 1. Create a new event bus in AWS EventBridge
 
