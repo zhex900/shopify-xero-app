@@ -3,8 +3,8 @@ import { jwtDecode } from "jwt-decode";
 import type { XeroAccessToken } from "xero-node";
 import { XeroClient } from "xero-node";
 
-const clientId = process.env.CLIENT_ID!;
-const clientSecret = process.env.CLIENT_SECRET!;
+const clientId = process.env.XERO_CLIENT_ID!;
+const clientSecret = process.env.XERO_CLIENT_SECRET!;
 const redirectUrl = process.env.REDIRECT_URI!;
 const scopes =
   "offline_access openid profile email accounting.transactions accounting.budgets.read accounting.reports.read accounting.journals.read accounting.settings accounting.settings.read accounting.contacts accounting.contacts.read accounting.attachments accounting.attachments.read files files.read assets assets.read projects projects.read payroll.employees payroll.payruns payroll.payslip payroll.timesheets payroll.settings";
